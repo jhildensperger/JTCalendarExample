@@ -210,7 +210,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
             selectedTo = date
             isRangeSelected = true
             return calendar.selectDates(from: startDate, to: date, triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
-//            Uncommenting this and removing the line above fixes the issue
+//            Uncommenting the line below and removing the return from line above fixes the issue
 //            return calendar.reloadData()
         }
         
